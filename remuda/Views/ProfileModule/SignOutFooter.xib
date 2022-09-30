@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignOutFooter" customModule="remuda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="199"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-wY-WKn">
+                    <rect key="frame" x="0.0" y="0.0" width="569" height="165"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPY-Qw-IS5">
+                            <rect key="frame" x="17" y="67.5" width="60" height="30"/>
+                            <state key="normal" title="Sign Out">
+                                <color key="titleColor" red="1" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSignOut:" destination="iN0-l3-epB" eventType="touchUpInside" id="31O-Di-06m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bPY-Qw-IS5" firstAttribute="leading" secondItem="eYh-wY-WKn" secondAttribute="leading" constant="17" id="G1i-jJ-oPr"/>
+                        <constraint firstItem="bPY-Qw-IS5" firstAttribute="centerY" secondItem="eYh-wY-WKn" secondAttribute="centerY" id="N1t-TQ-d1z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eYh-wY-WKn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6yI-tV-9Uy"/>
+                <constraint firstItem="eYh-wY-WKn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WYb-TZ-bJI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eYh-wY-WKn" secondAttribute="trailing" id="s47-ZD-DRA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eYh-wY-WKn" secondAttribute="bottom" id="vF8-0S-bzO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSignOut" destination="bPY-Qw-IS5" id="Kus-fT-zxp"/>
+            </connections>
+            <point key="canvasLocation" x="244.20289855072465" y="-123.54910714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

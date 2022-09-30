@@ -1,0 +1,108 @@
+{
+  "identifier" : "AC1A959E",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "24.99",
+      "familyShareable" : false,
+      "internalID" : "682DB80D",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_horse_basic",
+      "referenceName" : "Horse Basic Post",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "34.99",
+      "familyShareable" : false,
+      "internalID" : "B1C31D0B",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_horse_premium",
+      "referenceName" : "Horse Premium Post",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0",
+      "familyShareable" : false,
+      "internalID" : "46F3E627",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_equipment_basic",
+      "referenceName" : "Equipment Basic Post",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "9793A2AF",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_equipment_premium",
+      "referenceName" : "Equipment Premium Post",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "E110C3BD",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_tack_basic",
+      "referenceName" : "Tack Basic Post",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "14.99",
+      "familyShareable" : false,
+      "internalID" : "9CA23011",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.app.remuda_tack_premium",
+      "referenceName" : "Tack Premium Post",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

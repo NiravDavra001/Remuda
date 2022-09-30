@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomPickerView">
+            <connections>
+                <outlet property="btnCancel" destination="RS5-Dj-ERc" id="rMI-hf-OzM"/>
+                <outlet property="lblTitle" destination="arE-lY-pCY" id="DlL-8H-Srv"/>
+                <outlet property="navView" destination="fxu-WS-cEe" id="MeM-8b-j7v"/>
+                <outlet property="pickerView" destination="J0h-go-ynO" id="J31-n9-SW0"/>
+                <outlet property="tbnDone" destination="Dgb-6F-4Bx" id="bYz-ym-naP"/>
+                <outlet property="viewHeight" destination="UTC-nl-3zd" id="CXA-pT-W4h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gjA-cM-Qax">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KF-z1-6S3">
+                    <rect key="frame" x="0.0" y="44" width="414" height="164"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sa0-YD-1Pk">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxu-WS-cEe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS5-Dj-ERc">
+                                            <rect key="frame" x="16" y="-1" width="48" height="30"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" name="buttonGreen"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arE-lY-pCY">
+                                            <rect key="frame" x="186.5" y="3.5" width="41.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgb-6F-4Bx">
+                                            <rect key="frame" x="361" y="-1" width="37" height="30"/>
+                                            <state key="normal" title="Done">
+                                                <color key="titleColor" name="buttonGreen"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="buttonGray"/>
+                                    <constraints>
+                                        <constraint firstItem="arE-lY-pCY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RS5-Dj-ERc" secondAttribute="trailing" constant="20" id="DeI-JO-Wgb"/>
+                                        <constraint firstItem="Dgb-6F-4Bx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="arE-lY-pCY" secondAttribute="trailing" constant="20" id="EtY-nz-hZe"/>
+                                        <constraint firstItem="Dgb-6F-4Bx" firstAttribute="centerY" secondItem="fxu-WS-cEe" secondAttribute="centerY" id="YJL-EZ-piA"/>
+                                        <constraint firstItem="RS5-Dj-ERc" firstAttribute="leading" secondItem="fxu-WS-cEe" secondAttribute="leading" constant="16" id="f5W-lQ-Tde"/>
+                                        <constraint firstItem="arE-lY-pCY" firstAttribute="centerY" secondItem="fxu-WS-cEe" secondAttribute="centerY" id="gIX-b1-gpv"/>
+                                        <constraint firstItem="arE-lY-pCY" firstAttribute="centerX" secondItem="fxu-WS-cEe" secondAttribute="centerX" id="hZ4-aQ-xDk"/>
+                                        <constraint firstItem="RS5-Dj-ERc" firstAttribute="centerY" secondItem="fxu-WS-cEe" secondAttribute="centerY" id="lQM-hr-gDR"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dgb-6F-4Bx" secondAttribute="trailing" constant="16" id="qdu-o7-jY2"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVp-DK-h2I">
+                                    <rect key="frame" x="0.0" y="28" width="414" height="1"/>
+                                    <color key="backgroundColor" name="AppBorderColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="5eR-KD-fUn"/>
+                                    </constraints>
+                                </view>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0h-go-ynO">
+                                    <rect key="frame" x="0.0" y="29" width="414" height="135"/>
+                                </pickerView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Sa0-YD-1Pk" secondAttribute="trailing" id="Bg4-Uy-5st"/>
+                        <constraint firstItem="Sa0-YD-1Pk" firstAttribute="top" secondItem="8KF-z1-6S3" secondAttribute="top" id="FNT-FY-AMa"/>
+                        <constraint firstItem="Sa0-YD-1Pk" firstAttribute="leading" secondItem="8KF-z1-6S3" secondAttribute="leading" id="HnX-gV-Fdb"/>
+                        <constraint firstAttribute="bottom" secondItem="Sa0-YD-1Pk" secondAttribute="bottom" id="Ikb-JY-AnM"/>
+                        <constraint firstItem="fxu-WS-cEe" firstAttribute="height" secondItem="8KF-z1-6S3" secondAttribute="height" multiplier="0.17" id="UTC-nl-3zd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4Yf-Zk-GHm"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8KF-z1-6S3" firstAttribute="leading" secondItem="4Yf-Zk-GHm" secondAttribute="leading" id="Fy8-Jg-H9i"/>
+                <constraint firstItem="4Yf-Zk-GHm" firstAttribute="trailing" secondItem="8KF-z1-6S3" secondAttribute="trailing" id="IEk-lX-y7D"/>
+                <constraint firstItem="4Yf-Zk-GHm" firstAttribute="bottom" secondItem="8KF-z1-6S3" secondAttribute="bottom" id="oYp-mi-fjq"/>
+                <constraint firstItem="4Yf-Zk-GHm" firstAttribute="top" secondItem="8KF-z1-6S3" secondAttribute="top" id="wAm-5l-Pow"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-6" y="-254"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppBorderColor">
+            <color red="0.9100000262260437" green="0.9100000262260437" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonGray">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonGreen">
+            <color red="0.075000002980232239" green="0.50999999046325684" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

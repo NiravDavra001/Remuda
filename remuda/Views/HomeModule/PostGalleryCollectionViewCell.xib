@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PostGalleryCollectionViewCell" customModule="remuda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyK-pv-dfi">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="165"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wl7-ps-KPf">
+                                <rect key="frame" x="0.0" y="0.0" width="222" height="165"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ym3-9i-dw3">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="165"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ym3-9i-dw3" firstAttribute="centerX" secondItem="wl7-ps-KPf" secondAttribute="centerX" id="7NA-jO-9bA"/>
+                                    <constraint firstItem="ym3-9i-dw3" firstAttribute="centerY" secondItem="wl7-ps-KPf" secondAttribute="centerY" id="DF7-TR-y4F"/>
+                                    <constraint firstAttribute="bottom" secondItem="ym3-9i-dw3" secondAttribute="bottom" id="cHl-dp-Tth"/>
+                                    <constraint firstItem="ym3-9i-dw3" firstAttribute="top" secondItem="wl7-ps-KPf" secondAttribute="top" id="daw-lW-wkr"/>
+                                    <constraint firstItem="ym3-9i-dw3" firstAttribute="leading" secondItem="wl7-ps-KPf" secondAttribute="leading" id="jBX-0o-uSY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ym3-9i-dw3" secondAttribute="trailing" id="tPg-SL-1wl"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-Tj-01C">
+                                <rect key="frame" x="91" y="62.5" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.30279343793181335" alpha="0.29852820390107626" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jm2-TR-mWu"/>
+                                    <constraint firstAttribute="width" secondItem="OJ4-Tj-01C" secondAttribute="height" multiplier="1:1" id="oqS-Ac-2XC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="play_icon"/>
+                                <connections>
+                                    <action selector="btnPlayAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8dC-U2-CW1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wl7-ps-KPf" firstAttribute="centerY" secondItem="ZyK-pv-dfi" secondAttribute="centerY" id="KhZ-gr-pfG"/>
+                            <constraint firstItem="wl7-ps-KPf" firstAttribute="height" secondItem="ZyK-pv-dfi" secondAttribute="height" id="NnP-fc-pEo"/>
+                            <constraint firstItem="wl7-ps-KPf" firstAttribute="width" secondItem="ZyK-pv-dfi" secondAttribute="width" id="RAC-qb-foy"/>
+                            <constraint firstItem="wl7-ps-KPf" firstAttribute="centerX" secondItem="ZyK-pv-dfi" secondAttribute="centerX" id="aC9-cL-AJX"/>
+                            <constraint firstItem="OJ4-Tj-01C" firstAttribute="centerX" secondItem="ZyK-pv-dfi" secondAttribute="centerX" id="pZJ-c6-PeY"/>
+                            <constraint firstItem="OJ4-Tj-01C" firstAttribute="centerY" secondItem="ZyK-pv-dfi" secondAttribute="centerY" id="xfa-KU-gaF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZyK-pv-dfi" secondAttribute="bottom" id="0fa-qd-92Q"/>
+                <constraint firstItem="ZyK-pv-dfi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JYw-nE-cCZ"/>
+                <constraint firstAttribute="trailing" secondItem="ZyK-pv-dfi" secondAttribute="trailing" id="c7t-lZ-cND"/>
+                <constraint firstItem="ZyK-pv-dfi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="irv-7g-6WU"/>
+            </constraints>
+            <size key="customSize" width="222" height="165"/>
+            <connections>
+                <outlet property="btnPlay" destination="OJ4-Tj-01C" id="dE9-yl-hJV"/>
+                <outlet property="photoGalleryImageView" destination="ym3-9i-dw3" id="gQn-qm-taf"/>
+                <outlet property="scrollView" destination="wl7-ps-KPf" id="j2H-YX-6CX"/>
+            </connections>
+            <point key="canvasLocation" x="265.21739130434787" y="136.94196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_icon" width="32" height="32"/>
+    </resources>
+</document>

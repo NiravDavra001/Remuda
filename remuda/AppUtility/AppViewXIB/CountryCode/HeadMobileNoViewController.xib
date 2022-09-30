@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeadMobileNoViewController" customModule="remuda" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBarCountryCode" destination="O7I-wa-NsF" id="RXD-Jx-JLh"/>
+                <outlet property="tableView" destination="ue6-VN-Jc9" id="IaH-aO-788"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vr6-9d-P90">
+                    <rect key="frame" x="0.0" y="44" width="414" height="89.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9m-WV-OQZ">
+                            <rect key="frame" x="176.5" y="34.5" width="61" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neA-Z1-gTZ">
+                            <rect key="frame" x="382" y="33" width="24" height="24"/>
+                            <state key="normal" image="close_icon"/>
+                            <connections>
+                                <action selector="btnDismissTableview:" destination="-1" eventType="touchUpInside" id="Jf9-8S-FoO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="neA-Z1-gTZ" secondAttribute="trailing" constant="8" id="858-sE-3qB"/>
+                        <constraint firstItem="p9m-WV-OQZ" firstAttribute="centerX" secondItem="Vr6-9d-P90" secondAttribute="centerX" id="Bnq-7c-8IV"/>
+                        <constraint firstItem="p9m-WV-OQZ" firstAttribute="centerY" secondItem="Vr6-9d-P90" secondAttribute="centerY" id="CVI-at-Hfl"/>
+                        <constraint firstItem="neA-Z1-gTZ" firstAttribute="centerY" secondItem="Vr6-9d-P90" secondAttribute="centerY" id="V7g-e9-5X1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cao-v8-J1l">
+                    <rect key="frame" x="0.0" y="126" width="414" height="72"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Here" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-wa-NsF">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="O7I-wa-NsF" secondAttribute="bottom" id="EuC-39-zHf"/>
+                        <constraint firstItem="O7I-wa-NsF" firstAttribute="leading" secondItem="Cao-v8-J1l" secondAttribute="leading" id="Iaf-v1-ZLN"/>
+                        <constraint firstItem="O7I-wa-NsF" firstAttribute="top" secondItem="Cao-v8-J1l" secondAttribute="top" id="mqq-Jo-I2o"/>
+                        <constraint firstAttribute="trailing" secondItem="O7I-wa-NsF" secondAttribute="trailing" id="reY-5c-KbV"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-VN-Jc9">
+                    <rect key="frame" x="0.0" y="214" width="414" height="648"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cao-v8-J1l" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="86j-gm-FNG"/>
+                <constraint firstItem="Vr6-9d-P90" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dce-l0-h5S"/>
+                <constraint firstItem="ue6-VN-Jc9" firstAttribute="top" secondItem="Cao-v8-J1l" secondAttribute="bottom" constant="16" id="N7m-wa-KM0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vr6-9d-P90" secondAttribute="trailing" id="NGg-Al-FcB"/>
+                <constraint firstItem="ue6-VN-Jc9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Q0H-Qy-2nt"/>
+                <constraint firstItem="Vr6-9d-P90" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="TKY-cZ-ifa"/>
+                <constraint firstItem="Cao-v8-J1l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aZc-JG-Tlb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ue6-VN-Jc9" secondAttribute="bottom" id="bTv-eH-21S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cao-v8-J1l" secondAttribute="trailing" id="dfp-xV-sds"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ue6-VN-Jc9" secondAttribute="trailing" id="dsZ-fN-jx3"/>
+                <constraint firstItem="Vr6-9d-P90" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qpP-xm-tmT"/>
+                <constraint firstItem="Cao-v8-J1l" firstAttribute="top" secondItem="Vr6-9d-P90" secondAttribute="bottom" constant="-7.5" id="xda-SA-1fZ"/>
+            </constraints>
+            <point key="canvasLocation" x="231.8840579710145" y="-7.3660714285714279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

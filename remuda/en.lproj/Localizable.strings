@@ -1,0 +1,56 @@
+ /*
+  Localizable.strings
+  remuda
+
+  Created by mac on 09/04/21.
+  
+*/
+"enter_user_name"                   =  "Please enter your name";
+"enter_password"                    =  "Please enter your password";
+"enter_old_password"                =  "Please enter your old password";
+"enter_new_password"                =  "Please enter your new password";
+"enter_email"                       =  "Please enter your email";
+"enter_phone"                       =  "Please enter your phone";
+"enter_email_phone"                 =  "Please enter your email or phone";
+"enter_confirm_password"            =  "Please enter your confirm password";
+"enter_match_password"              =  "Your new passwords and confirm password does not match";
+"old_password_new_password"         =  "Old password and new password cannot be same";
+"login_other_way"                   =  "Login other ways";
+
+
+"enter_age"                         =  "Please enter your age";
+"enter_user_password"               =  "Please enter user password";
+"enter_valid_password"              =  "Your password must contain at-least one speacial character, one digit,one upper case,one lower case and at-least contains length of 8";
+"valid_email"                       =  "Please enter valid mail";
+"enter_first_name"                  = "Please enter your first name";
+"enter_second_name"                 = "Please enter your last name";
+"enter_your_city"                   = "Please enter your city";
+"enter_your_phone_number"           = "Please enter your phone number";
+"enter_your_valid_phone_number"     = "Please enter your valid phone number";
+"enter_borndate"                    = "Please enter horse born date";
+"enter_registrationNumber"          = "Please enter horse registration number";
+
+"enter_title"                       = "Please enter horse title";
+"enter_price"                       = "Please enter horse price";
+"eneter_description"                = "Please enter horse description";
+"enter_horse_breed"                 = "Please enter horse horse breed";
+"enter_color"                       = "Please enter horse color";
+"enter_approximate_height"          = "Please enter horse approximate height";
+"enter_discipline"                  = "Please enter horse discipline";
+"enter_pedigree"                    = "Please enter horse pedigree";
+"enter_life_time_earning"           = "Please enter horse Life Time Earnings";
+"enter_significant_name_on_papers"  = "Please enter horse significantn name on papers";
+"enter_ability_level"               = "Please enter horse ability level";
+"enter_breeding_stock"              = "Please enter horse breeding stock";
+"enter_radiographs"                 = "Please enter horse radiographs";
+"enter_equipment_title"             = "Please enter equipment title";
+"enter_equipment_price"             = "Please enter equipment price";
+"enter_equipment_description"       = "Please enter equipment description";
+"enter_equipment_condition"         = "Please enter equipment condition";
+"enter_tack_title"                  = "Please enter tack title";
+"enter_tack_price"                  = "Please enter tack price";
+"enter_tack_description"            = "Please enter tack description";
+"enter_tack_type"                   = "Please enter tack type";
+"enter_tack_saddles"                = "Please enter tack saddels";
+"enter_tack_condition"              = "Please enter tack condition";
+"enter_hoese_age"                   = "Please enter age";

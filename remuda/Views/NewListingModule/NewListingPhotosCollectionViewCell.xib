@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewListingPhotosCollectionViewCell" id="5us-SY-83r" customClass="NewListingPhotosCollectionViewCell" customModule="remuda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="430"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="430"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-UV-zFB">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="430"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DemoHorse" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-ug-cpC">
+                                <rect key="frame" x="0.0" y="0.0" width="429" height="430"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-EQ-myo">
+                                <rect key="frame" x="8" y="8" width="80.5" height="80.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-ih-ize">
+                                        <rect key="frame" x="7" y="7" width="66.5" height="66.5"/>
+                                        <state key="normal" image="close_icon"/>
+                                        <connections>
+                                            <action selector="btnRemove:" destination="5us-SY-83r" eventType="touchUpInside" id="4m9-N9-uk9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LVo-ih-ize" firstAttribute="top" secondItem="kVf-EQ-myo" secondAttribute="top" constant="7" id="JNI-rF-Fb7"/>
+                                    <constraint firstAttribute="trailing" secondItem="LVo-ih-ize" secondAttribute="trailing" constant="7" id="cLq-er-qTD"/>
+                                    <constraint firstAttribute="width" secondItem="kVf-EQ-myo" secondAttribute="height" multiplier="1:1" id="hp1-W1-NQi"/>
+                                    <constraint firstAttribute="bottom" secondItem="LVo-ih-ize" secondAttribute="bottom" constant="7" id="lHl-Ac-oQS"/>
+                                    <constraint firstItem="LVo-ih-ize" firstAttribute="leading" secondItem="kVf-EQ-myo" secondAttribute="leading" constant="7" id="szU-kI-jGH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kVf-EQ-myo" firstAttribute="leading" secondItem="AvF-UV-zFB" secondAttribute="leading" constant="8" id="1N6-m1-ViH"/>
+                            <constraint firstAttribute="trailing" secondItem="6h9-ug-cpC" secondAttribute="trailing" id="43k-sZ-dhy"/>
+                            <constraint firstItem="6h9-ug-cpC" firstAttribute="leading" secondItem="AvF-UV-zFB" secondAttribute="leading" id="DUB-kF-Mfm"/>
+                            <constraint firstItem="kVf-EQ-myo" firstAttribute="width" secondItem="AvF-UV-zFB" secondAttribute="width" multiplier="30:160" id="YNw-Ig-hfh"/>
+                            <constraint firstItem="6h9-ug-cpC" firstAttribute="top" secondItem="AvF-UV-zFB" secondAttribute="top" id="bv2-6Y-EwD"/>
+                            <constraint firstItem="kVf-EQ-myo" firstAttribute="top" secondItem="AvF-UV-zFB" secondAttribute="top" constant="8" id="eju-WZ-r9y"/>
+                            <constraint firstAttribute="bottom" secondItem="6h9-ug-cpC" secondAttribute="bottom" id="gXf-O0-PIU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="JRh-bJ-96Y"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AvF-UV-zFB" secondAttribute="trailing" id="2qz-ZE-721"/>
+                <constraint firstAttribute="bottom" secondItem="AvF-UV-zFB" secondAttribute="bottom" id="FYp-UK-0iB"/>
+                <constraint firstItem="AvF-UV-zFB" firstAttribute="leading" secondItem="5us-SY-83r" secondAttribute="leading" id="afl-hJ-Tyn"/>
+                <constraint firstItem="AvF-UV-zFB" firstAttribute="top" secondItem="5us-SY-83r" secondAttribute="top" id="xAg-Yy-E1U"/>
+            </constraints>
+            <size key="customSize" width="429" height="430"/>
+            <connections>
+                <outlet property="btnRemove" destination="LVo-ih-ize" id="aTM-8x-kEP"/>
+                <outlet property="imgHorseListing" destination="6h9-ug-cpC" id="2X2-Fu-lrF"/>
+                <outlet property="viewClose" destination="kVf-EQ-myo" id="SW5-QY-yU0"/>
+                <outlet property="viewForAddphotoVideo" destination="AvF-UV-zFB" id="dQU-Pf-ti4"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="23"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DemoHorse" width="375" height="375"/>
+        <image name="close_icon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFeedImageVideoCollectionViewCell" id="gTV-IL-0wX" customClass="HomeFeedImageVideoCollectionViewCell" customModule="remuda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="253"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="253"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQP-cL-WWH">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="253"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkI-Dt-Hl0">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="253"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-ic-FN0">
+                                <rect key="frame" x="159.5" y="110.5" width="38" height="32"/>
+                                <state key="normal" image="play_icon"/>
+                                <connections>
+                                    <action selector="btnPlayAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hms-hr-u4K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gkI-Dt-Hl0" firstAttribute="leading" secondItem="NQP-cL-WWH" secondAttribute="leading" id="2OS-Tw-AUf"/>
+                            <constraint firstAttribute="trailing" secondItem="gkI-Dt-Hl0" secondAttribute="trailing" id="Cjf-dX-tA4"/>
+                            <constraint firstItem="n7H-ic-FN0" firstAttribute="centerX" secondItem="NQP-cL-WWH" secondAttribute="centerX" id="GMD-5S-MK9"/>
+                            <constraint firstItem="n7H-ic-FN0" firstAttribute="centerY" secondItem="NQP-cL-WWH" secondAttribute="centerY" id="K2L-Jx-MMj"/>
+                            <constraint firstAttribute="bottom" secondItem="gkI-Dt-Hl0" secondAttribute="bottom" id="UDL-bF-zyM"/>
+                            <constraint firstItem="gkI-Dt-Hl0" firstAttribute="top" secondItem="NQP-cL-WWH" secondAttribute="top" id="fi9-oj-BDo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NQP-cL-WWH" secondAttribute="trailing" id="FPf-2h-5di"/>
+                <constraint firstItem="NQP-cL-WWH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P5B-Fb-8Ag"/>
+                <constraint firstItem="NQP-cL-WWH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jgu-Z9-UgY"/>
+                <constraint firstItem="n7H-ic-FN0" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="40:375" id="ucd-eq-wCL"/>
+                <constraint firstAttribute="bottom" secondItem="NQP-cL-WWH" secondAttribute="bottom" id="xMc-At-1q7"/>
+            </constraints>
+            <size key="customSize" width="357" height="253"/>
+            <connections>
+                <outlet property="btnPlay" destination="n7H-ic-FN0" id="QUI-bG-PRK"/>
+                <outlet property="homeFeedimageView" destination="gkI-Dt-Hl0" id="f9s-nr-VAr"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="137"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_icon" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
